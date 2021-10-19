@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    .red {
+      background: red;
+    }
+  </style>
+
+  <body>
+    <h1>My Shopping Cart</h1>
+    <p>product quantity Remove price</p>
+
+    <div class="product">
+      <div class="container">
+        <img
+          src="https://www.diabete.qc.ca/wp-content/uploads/2014/08/Les-fruits-768x768.png"
+          id="img"
+          alt="kiwi"
+          width="200"
+          height="200"
+        />
+        <h6 class="productf">kiwi</h6>
+        <span class="shop-price">9.99</span>
+
+        <button class="plus-btn">+</button>
+        <span class="count"> 0</span>
+        <button class="minus-btn">-</button>
+
+        <button type="button" class="removeBtn" onclick="deleteProduct()">
+          X
+        </button>
+        <button type="button" class="likeBtn" onclick="likeProduct()">
+          like
+        </button>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="container">
+        <img
+          src="https://www.medisite.fr/files/styles/pano_xxl/public/images/diaporama/0/0/4/5489400/vignette-focus_0.jpg?itok=VYZBIEyq"
+          id="img"
+          alt="kiwi"
+          width="200"
+          height="200"
+        />
+        <h6 class="productf">avocado</h6>
+        <span class="shop-price">19.99</span>
+        <button class="plus-btn">+</button>
+        <span class="count"> 0</span>
+        <button class="minus-btn">-</button>
+
+        <button type="button" class="removeBtn" onclick="deleteProduct()">
+          X
+        </button>
+        <button type="button" class="likeBtn" onclick="likeProduct()">
+          like
+        </button>
+      </div>
+    </div>
+
+    <div class="cart-total">
+      <strong class="cart-total-title">Total</strong>
+      <span class="total-price">0</span>
+    </div>
+
+    <!-- js-->
+    <script src="dom.js">
+    </script>
+  </body>
+</html>
